@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="157dp"
+                android:background="@android:color/background_light"
+                android:elevation="4dp"
+                android:layout_marginStart="-16dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!-- Hamburger Icon -->
+                    <ImageButton
+                        android:id="@+id/hamburger_icon"
+                        android:layout_width="87dp"
+                        android:layout_height="74dp"
+                        android:layout_marginStart="0dp"
+                        android:background="@null"
+                        android:contentDescription="Hamburger Icon"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_hamburger"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.493" />
+
+                    <!-- Centered Logo -->
+                    <ImageView
+                        android:id="@+id/logo"
+                        android:layout_width="109dp"
+                        android:layout_height="197dp"
+                        android:contentDescription="Logo"
+                        android:scaleType="centerInside"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/mialogo" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+            <!-- Title -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Project Details -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Project Name: Airport App"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description: This app contains Shops, Restaurants, Destinations, Lounges, Airlines. For passengers to have a guide what NAIA offers!"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Developers Section -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Developers:"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Emerson Sze - Front End Developer\n2. Deseree Morales - UI/UX Design\n3. Ram Jiro Aba - Backend Integration \n 4. Roginald Francisco - None"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Date -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date: December 18 2024"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Version -->
+
+
+                <!-- Notes Section -->
+
+
+            </LinearLayout>
+            <!-- Grid Layout -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="Developers"
+                android:textAlignment="textStart"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <GridLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:orientation="horizontal">
+
+                <!-- Item 1 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:layout_height="250dp"
+                    android:layout_margin="8dp"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:background="#FFFFFF"
+                    android:elevation="4dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/developer1" />
+
+                    <TextView
+                        android:paddingBottom="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:paddingTop="4dp"
+                        android:text="Ram Jiro Aba"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="Back End Developer"
+                        android:textColor="#888888"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- Item 2 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:layout_height="250dp"
+                    android:layout_margin="8dp"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:background="#FFFFFF"
+                    android:elevation="4dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/developer2" />
+
+                    <TextView
+                        android:paddingBottom="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:paddingTop="4dp"
+                        android:text="Emerson Sze"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="Front End Developer"
+                        android:textColor="#888888"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- Item 3 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:layout_height="250dp"
+                    android:layout_margin="8dp"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:background="#FFFFFF"
+                    android:elevation="4dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/lounge3" />
+
+                    <TextView
+                        android:paddingBottom="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:paddingTop="4dp"
+                        android:text="Deseree Morales"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="UI/UX Design"
+                        android:textColor="#888888"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- Item 4 -->
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:layout_margin="8dp"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:background="#FFFFFF"
+                    android:elevation="4dp">
+
+                    <ImageView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/lounge4" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="8dp"
+                        android:text="Roginald Francisco"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="None"
+                        android:textColor="#888888"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+
+
+
+
+            </GridLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/high_tech_button_bg"
+                android:gravity="center"
+                android:text="Back Home"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
